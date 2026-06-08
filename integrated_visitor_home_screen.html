@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JaGaApp Rebrand Proposal Sandbox</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons for iconography -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        /* Custom scrollbar hiding for clean app feel */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Simulated 3D icon effects matching image_6bdbe0.png */
+        .glossy-3d-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), inset 0 -4px 6px rgba(0,0,0,0.2), inset 0 4px 6px rgba(255,255,255,0.6);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
+
+    <header class="border-b border-slate-800 bg-slate-950/80 px-6 py-4 sticky top-0 z-40 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="bg-orange-500 text-white text-[10px] font-extrabold uppercase px-2 py-0.5 rounded tracking-wider">Proposal Sandbox v5</span>
+                    <h1 class="text-xl font-extrabold text-white tracking-tight">JaGaApp Integrated Home Screen Rebrand</h1>
+                </div>
+                <p class="text-xs text-slate-400 mt-1">Preserving all legacy property cards while consolidating a smart, interactive Upcoming Visitors Hub.</p>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-2">
+                <button onclick="setMobileScreen('old-home')" id="btn-toggle-old" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 bg-slate-800 text-slate-400 hover:text-white">
+                    <i data-lucide="image" class="w-3.5 h-3.5"></i> Original Home (image_6bdbe0.png)
+                </button>
+                <button onclick="setMobileScreen('new-integrated-home')" id="btn-toggle-new" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 bg-orange-500 text-white shadow-md shadow-orange-500/10">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> New Integrated Home
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1 max-w-7xl mx-auto w-full p-4 lg:p-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left Column: Architectural Breakdown & Guide -->
+        <section class="lg:col-span-5 flex flex-col gap-6">
+            
+            <!-- Strategic Integration Directions -->
+            <div class="bg-slate-950/60 border border-slate-800 rounded-3xl p-5 space-y-4">
+                <h2 class="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                    <i data-lucide="layers" class="w-4 h-4 text-orange-500"></i>
+                    REVISED UX CHANGES
+                </h2>
+
+                <div class="space-y-4">
+                    <!-- History CTA Update -->
+                    <div class="border-l-2 border-orange-500 pl-3">
+                        <h4 class="text-xs font-extrabold text-white">1. High-Visibility History CTA Link</h4>
+                        <p class="text-[11px] text-slate-400 mt-0.5">
+                            Instead of occupying excessive space at the bottom of the feed, the <strong>Visitor History Log</strong> has been relocated to a quick-routing CTA link within the header of the Visitor Desk. Clicking it triggers a smooth bottom-sheet ledger with filters.
+                        </p>
+                    </div>
+
+                    <!-- Upcoming Visitor Card Transformation -->
+                    <div class="border-l-2 border-emerald-500 pl-3">
+                        <h4 class="text-xs font-extrabold text-white">2. Upcoming Visitors Aggregation Card</h4>
+                        <p class="text-[11px] text-slate-400 mt-0.5">
+                            Today's visitor slot has evolved into a smart "Upcoming" container. It showcases the immediate next scheduled arrival, and includes an aggregated counter (e.g., "+2 more") for other registered guests.
+                        </p>
+                    </div>
+
+                    <!-- Interactive Upcoming Bottom Sheet -->
+                    <div class="border-l-2 border-indigo-500 pl-3">
+                        <h4 class="text-xs font-extrabold text-white">3. Tap-to-Manage Sheet</h4>
+                        <p class="text-[11px] text-slate-400 mt-0.5">
+                            Tapping the Upcoming Card slides up a beautiful, dedicated overview where residents can see specific arrival calendars, cancel a scheduled entrance, or quickly share access codes to messaging channels.
+                        </p>
+                    </div>
+
+                    <!-- Retaining image_6bdbe0.png cards -->
+                    <div class="border-l-2 border-sky-500 pl-3">
+                        <h4 class="text-xs font-extrabold text-white">4. Fully Preserved Original Context</h4>
+                        <p class="text-[11px] text-slate-400 mt-0.5">
+                            The layout continues to carry all legacy items: outstanding RM billing, cover photo, guard hotline shortcuts, and the structured utilities grid at the bottom.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI Design System Critique Card -->
+            <div class="bg-slate-950/60 border border-slate-800 rounded-3xl p-5 space-y-3.5">
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+                    <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+                    PROTOTYPE INSTRUCTIONS
+                </h3>
+                <p class="text-xs text-slate-400">
+                    Use the simulated mobile screen on the right. Try <strong>creating an Upcoming/Overnight guest</strong> with the quick action forms, click the <strong>Upcoming card</strong> to inspect the guest lists, or click the <strong>History link</strong> at the top of the Desk to pull up past logs.
+                </p>
+            </div>
+        </section>
+
+        <section class="lg:col-span-7 flex flex-col items-center justify-center">
+            
+            <div class="w-[390px] h-[812px] bg-slate-950 rounded-[48px] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.7)] border-[10px] border-slate-800 overflow-hidden flex flex-col relative transition-all duration-300">
+                
+                <!-- Notch/Dynamic Island simulation -->
+                <div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-32 h-6 bg-slate-900 rounded-full z-50 flex items-center justify-center">
+                    <div class="w-2.5 h-2.5 rounded-full bg-slate-800 absolute right-4"></div>
+                </div>
+
+                <!-- Status Bar -->
+                <div class="px-6 pt-5 pb-2 flex justify-between items-center text-[11px] font-bold text-slate-700 z-40 bg-white select-none" id="status-bar">
+                    <span>9:41</span>
+                    <div class="flex items-center gap-1.5">
+                        <i data-lucide="signal" class="w-3 h-3"></i>
+                        <i data-lucide="wifi" class="w-3 h-3"></i>
+                        <div class="w-5 h-2.5 border border-slate-400 rounded-sm p-0.5 flex items-center justify-start"><span class="w-3 h-full bg-slate-700 rounded-[1px]"></span></div>
+                    </div>
+                </div>
+
+                <!-- Live Notification toast overlay -->
+                <div id="toast" class="absolute top-14 left-4 right-4 bg-slate-900/95 border border-slate-800 text-white p-3.5 rounded-2xl shadow-xl z-50 transition-all duration-300 transform -translate-y-32 opacity-0 flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-orange-500/20 text-orange-400 flex items-center justify-center shrink-0">
+                        <i data-lucide="bell" class="w-4 h-4"></i>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-[10px] text-slate-500 font-bold uppercase tracking-wider" id="toast-title">System Alert</div>
+                        <p class="text-xs text-slate-200" id="toast-message">Guest checked in!</p>
+                    </div>
+                    <button onclick="closeToast()" class="text-slate-400 hover:text-white"><i data-lucide="x" class="w-4 h-4"></i></button>
+                </div>
+
+                <!-- SCREEN VIEWPORT WINDOW -->
+                <div class="flex-1 overflow-hidden relative bg-slate-100 text-slate-800 flex flex-col">
+
+                    <!-- SCREEN 1: ORIGINAL HOME SCREEN (Exactly matching image_6bdbe0.png) -->
+                    <div id="screen-old" class="absolute inset-0 z-20 flex flex-col transition-transform duration-300 transform translate-x-0 bg-slate-50">
+                        
+                        <!-- Header Property Profile -->
+                        <div class="relative h-40 shrink-0 bg-cover bg-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.65)), url('https://placehold.co/600x350/1e293b/ffffff?text=JaGaApp+Demo+Property');">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-900/20 to-transparent"></div>
+                            <div class="absolute bottom-10 left-5">
+                                <h4 class="text-base font-extrabold tracking-tight">JaGaApp Demo Property</h4>
+                                <p class="text-xs text-slate-200">B1-1-1, UAT</p>
+                                <span class="text-[9px] text-slate-300 underline mt-1 block">Tap to change property</span>
+                            </div>
+                        </div>
+
+                        <!-- RM Outstanding Status Banner -->
+                        <div class="mx-4 -mt-6 bg-emerald-500 rounded-2xl p-3.5 text-white flex justify-between items-center shadow-lg shadow-emerald-500/20 relative z-30">
+                            <div>
+                                <span class="text-[10px] font-bold text-emerald-100 uppercase tracking-wider">No Outstanding</span>
+                                <h5 class="text-base font-extrabold mt-0.5">RM 00.00</h5>
+                            </div>
+                            <button class="bg-black text-white text-xs font-bold px-3 py-1.5 rounded-full hover:bg-slate-900 transition-all">
+                                View More
+                            </button>
+                        </div>
+
+                        <!-- Old Home Scrollable Content Area -->
+                        <div class="flex-1 overflow-y-auto no-scrollbar px-4 pt-4 pb-6 space-y-4">
+                            
+                            <!-- Managed By Banner Card -->
+                            <div class="bg-white border border-slate-100 rounded-2xl p-2.5 flex items-center justify-between shadow-sm">
+                                <div class="flex items-center gap-2 text-xs font-bold text-slate-700 w-full justify-between">
+                                    <span>Managed By: ABC Prop & Co</span>
+                                    <span class="w-5 h-5 bg-red-100 text-red-500 rounded-full flex items-center justify-center text-[10px] font-bold">G</span>
+                                </div>
+                            </div>
+
+                            <!-- Communication Options Cards -->
+                            <div class="bg-white border border-slate-100 p-3 rounded-2xl grid grid-cols-3 gap-1 shadow-sm">
+                                <div class="flex flex-col items-center text-center p-1">
+                                    <div class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center text-2xl">👮‍♂️</div>
+                                    <span class="text-[9px] font-extrabold text-slate-600 mt-1">Talk to Guard</span>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-1">
+                                    <div class="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-2xl">👩</div>
+                                    <span class="text-[9px] font-extrabold text-slate-600 mt-1">Talk to Management</span>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-1">
+                                    <div class="w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center text-2xl">💬</div>
+                                    <span class="text-[9px] font-extrabold text-slate-600 mt-1">Talk to Neighbours</span>
+                                </div>
+                            </div>
+
+                            <!-- Grid exactly mimicking image_6bdbe0.png -->
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3 class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-1">About Your Property</h3>
+                                    <span class="text-[9px] bg-red-100 text-red-600 px-1.5 py-0.5 rounded font-extrabold">Original</span>
+                                </div>
+                                
+                                <div class="grid grid-cols-4 gap-y-4 gap-x-2 bg-white p-3.5 rounded-2xl border border-slate-100 shadow-sm">
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-red-600 to-red-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">🚨</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1.5 truncate w-full">Emergency</span>
+                                    </div>
+
+                                    <div onclick="setMobileScreen('new-integrated-home')" class="flex flex-col items-center text-center cursor-pointer group relative">
+                                        <span class="absolute -top-3 px-1 bg-orange-500 text-white text-[7px] font-extrabold rounded-full uppercase scale-90 animate-pulse">New</span>
+                                        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-purple-600 to-purple-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">🆔</div>
+                                        <span class="text-[10px] font-extrabold text-purple-700 mt-1.5 truncate w-full">Visitors</span>
+                                    </div>
+
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-orange-500 to-amber-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">📢</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1.5 truncate w-full">Notices</span>
+                                    </div>
+
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-green-500 to-emerald-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">🎾</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1.5 truncate w-full">Facility</span>
+                                    </div>
+
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-rose-600 to-rose-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">📞</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1.5 truncate w-full">Contacts</span>
+                                    </div>
+
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-sky-500 to-sky-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">💬</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1.5 truncate w-full">Feedback</span>
+                                    </div>
+
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-teal-500 to-teal-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">📝</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1.5 truncate w-full">Forms</span>
+                                    </div>
+
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-yellow-500 to-yellow-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">📁</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1.5 truncate w-full">Documents</span>
+                                    </div>
+
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-pink-500 to-rose-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">📍</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1.5 truncate w-full">Patrol</span>
+                                    </div>
+
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-500 to-purple-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">🗳️</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1.5 truncate w-full">Poll</span>
+                                    </div>
+
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-500 to-yellow-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">🚗</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1.5 truncate w-full">Vehicle</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Property Billing Section -->
+                            <div class="space-y-2">
+                                <h3 class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-1">Property Billing</h3>
+                                <div class="grid grid-cols-4 gap-2 bg-white p-3 rounded-2xl border border-slate-100 shadow-sm">
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-emerald-600 to-emerald-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">💵</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1 truncate w-full">Billing</span>
+                                    </div>
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-yellow-500 to-amber-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">📄</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1 truncate w-full">TIN</span>
+                                    </div>
+                                    <div class="flex flex-col items-center text-center">
+                                        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-blue-600 to-sky-400 flex items-center justify-center text-xl text-white glossy-3d-shadow">📈</div>
+                                        <span class="text-[10px] font-bold text-slate-600 mt-1 truncate w-full">Statement</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- SCREEN 2: NEW INTEGRATED HOME (With All Widgets + Rebranded Visitor Desk Hub) -->
+                    <div id="screen-new" class="absolute inset-0 z-10 flex flex-col transition-transform duration-300 transform translate-x-full bg-slate-100">
+                        
+                        <!-- HEADER PROPERTY BANNER (RETAINED) -->
+                        <div class="relative h-36 shrink-0 bg-cover bg-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.7)), url('https://placehold.co/600x350/1e293b/ffffff?text=JaGaApp+Demo+Property');">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/30 to-transparent"></div>
+                            <div class="absolute bottom-8 left-4">
+                                <h4 class="text-sm font-extrabold tracking-tight">JaGaApp Demo Property</h4>
+                                <p class="text-[10px] text-slate-300">B1-1-1, UAT</p>
+                                <span class="text-[8px] text-slate-400 underline mt-0.5 block">Tap to change property</span>
+                            </div>
+                        </div>
+
+                        <!-- RM STATEMENT BANNER (RETAINED & PLACED EXACTLY AS ORIGINAL) -->
+                        <div class="mx-4 -mt-5 bg-emerald-500 rounded-2xl p-3 text-white flex justify-between items-center shadow-lg shadow-emerald-500/20 relative z-30 shrink-0">
+                            <div>
+                                <span class="text-[9px] font-bold text-emerald-100 uppercase tracking-wider">No Outstanding</span>
+                                <h5 class="text-sm font-extrabold mt-0.5">RM 00.00</h5>
+                            </div>
+                            <button class="bg-black text-white text-[10px] font-bold px-3 py-1.5 rounded-full hover:bg-slate-900 transition-all">
+                                View Statement
+                            </button>
+                        </div>
+
+                        <!-- Main Scrollable Feed with both Legacy + New Elements -->
+                        <div class="flex-1 overflow-y-auto p-4 space-y-4 no-scrollbar">
+                            
+                            <!-- ORIGINAL MANAGEMENT LOGO BANNER (RETAINED) -->
+                            <div class="bg-white border border-slate-200/60 rounded-2xl px-3 py-2 flex items-center justify-between shadow-sm shrink-0">
+                                <div class="flex items-center gap-2 text-[10px] font-extrabold text-slate-600">
+                                    <span class="w-4 h-4 bg-red-100 text-red-500 rounded-full flex items-center justify-center text-[8px] font-black">G</span>
+                                    <span>Managed By: ABC Prop & Co</span>
+                                </div>
+                            </div>
+
+                            <!-- ORIGINAL COMMUNICATION HUB WIDGET (RETAINED) -->
+                            <div class="bg-white border border-slate-200/80 p-3 rounded-2xl grid grid-cols-3 gap-1 shadow-sm shrink-0">
+                                <div class="flex flex-col items-center text-center p-1 cursor-pointer hover:bg-slate-50 rounded-xl transition-all">
+                                    <div class="w-10 h-10 bg-sky-50 rounded-full flex items-center justify-center text-xl shadow-inner">👮‍♂️</div>
+                                    <span class="text-[9px] font-extrabold text-slate-700 mt-1">Talk to Guard</span>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-1 cursor-pointer hover:bg-slate-50 rounded-xl transition-all">
+                                    <div class="w-10 h-10 bg-amber-50 rounded-full flex items-center justify-center text-xl shadow-inner">👩</div>
+                                    <span class="text-[9px] font-extrabold text-slate-700 mt-1">Talk to Management</span>
+                                </div>
+                                <div class="flex flex-col items-center text-center p-1 cursor-pointer hover:bg-slate-50 rounded-xl transition-all">
+                                    <div class="w-10 h-10 bg-teal-50 rounded-full flex items-center justify-center text-xl shadow-inner">💬</div>
+                                    <span class="text-[9px] font-extrabold text-slate-700 mt-1">Talk to Neighbours</span>
+                                </div>
+                            </div>
+
+                            <!-- THE REBRANDED VISITOR DESK HUB (INTEGRATED ON THE MAIN FEED) -->
+                            <div class="bg-white border border-slate-200 rounded-3xl p-4 space-y-4 shadow-sm relative overflow-hidden">
+                                
+                                <div class="flex items-center justify-between pb-1.5 border-b border-slate-100">
+                                    <div class="flex items-center gap-1.5">
+                                        <div class="w-2.5 h-2.5 rounded-full bg-orange-500 animate-pulse"></div>
+                                        <h3 class="text-xs font-black text-slate-900 tracking-tight">Visitor Management Desk</h3>
+                                    </div>
+                                    <!-- CTA / LINK ROUTING TO VISITOR PASS HISTORY -->
+                                    <button onclick="openHistorySheet()" class="text-[9px] text-orange-600 hover:text-orange-700 font-extrabold flex items-center gap-0.5 transition-colors border border-orange-100 rounded-full px-2 py-0.5 bg-orange-50/50">
+                                        <span>Pass History</span>
+                                        <i data-lucide="chevron-right" class="w-3 h-3"></i>
+                                    </button>
+                                </div>
+
+                                <!-- Dynamic Overnight Quota Card Widget -->
+                                <div class="bg-slate-50 border border-slate-200/60 rounded-2xl p-3">
+                                    <div class="flex justify-between items-center mb-1.5">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="moon" class="w-3.5 h-3.5 text-indigo-600"></i>
+                                            <span class="text-[9px] font-extrabold text-slate-700">Monthly Overnight Stays Quota</span>
+                                        </div>
+                                        <span id="quota-text" class="text-[10px] font-extrabold text-indigo-700">3 / 5 Passes Left</span>
+                                    </div>
+                                    <div class="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
+                                        <div id="quota-bar" class="bg-gradient-to-r from-indigo-500 to-purple-600 h-full rounded-full transition-all duration-500" style="width: 60%;"></div>
+                                    </div>
+                                </div>
+
+                                <!-- UPCOMING VISITOR CARD CONTAINER (TAP TO VIEW ALL UPCOMING VISITORS) -->
+                                <div id="upcoming-visitor-card" onclick="openUpcomingSheet()" class="cursor-pointer">
+                                    <!-- Dynamic content loads here (e.g., card indicating next arriving guest and total counts) -->
+                                </div>
+
+                                <!-- Primary Creation Shortcuts -->
+                                <div class="grid grid-cols-3 gap-1.5">
+                                    <button onclick="openInviteModal('One-Time')" class="py-2.5 bg-orange-50 hover:bg-orange-100/80 border border-orange-100 text-orange-600 rounded-xl text-[9px] font-extrabold flex flex-col items-center gap-1 transition-all">
+                                        <i data-lucide="user-check" class="w-3.5 h-3.5"></i> One-Time
+                                    </button>
+                                    <button onclick="openInviteModal('Regular')" class="py-2.5 bg-emerald-50 hover:bg-emerald-100/80 border border-emerald-100 text-emerald-600 rounded-xl text-[9px] font-extrabold flex flex-col items-center gap-1 transition-all">
+                                        <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Regular
+                                    </button>
+                                    <button onclick="openInviteModal('Overnight')" class="py-2.5 bg-indigo-50 hover:bg-indigo-100/80 border border-indigo-100 text-indigo-600 rounded-xl text-[9px] font-extrabold flex flex-col items-center gap-1 transition-all">
+                                        <i data-lucide="moon" class="w-3.5 h-3.5"></i> Overnight
+                                    </button>
+                                </div>
+
+                                <!-- Favorite Fast Shortcuts -->
+                                <div class="space-y-1.5 pt-1">
+                                    <span class="text-[9px] font-extrabold text-slate-400 uppercase tracking-widest px-1">Favorite Shortcuts</span>
+                                    <div class="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
+                                        <div onclick="applyFavorite('My Parents', 'WQA 5821', 'Regular')" class="flex items-center gap-1.5 bg-slate-50 border border-slate-200/60 rounded-full pl-1.5 pr-3 py-1 cursor-pointer hover:border-orange-400 transition-all shrink-0">
+                                            <div class="w-5 h-5 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center text-[8px] font-extrabold">MP</div>
+                                            <span class="text-[9px] font-extrabold text-slate-600">Parents</span>
+                                        </div>
+                                        <div onclick="applyFavorite('Weekly Cleaner', 'WPS 1109', 'Regular')" class="flex items-center gap-1.5 bg-slate-50 border border-slate-200/60 rounded-full pl-1.5 pr-3 py-1 cursor-pointer hover:border-emerald-400 transition-all shrink-0">
+                                            <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-[8px] font-extrabold">WC</div>
+                                            <span class="text-[9px] font-extrabold text-slate-600">Cleaner</span>
+                                        </div>
+                                        <div onclick="applyFavorite('Overnight Guest', 'BND 3215', 'Overnight')" class="flex items-center gap-1.5 bg-slate-50 border border-slate-200/60 rounded-full pl-1.5 pr-3 py-1 cursor-pointer hover:border-indigo-400 transition-all shrink-0">
+                                            <div class="w-5 h-5 rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-[8px] font-extrabold">OG</div>
+                                            <span class="text-[9px] font-extrabold text-slate-600">Grandpa</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- LEGACY UTILITIES GRID (REBRANDED IN SEMI-FLAT CONTAINER STYLE) -->
+                            <div class="space-y-2">
+                                <h3 class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-1">About Your Property</h3>
+                                <div class="grid grid-cols-4 gap-2.5 bg-white p-3.5 rounded-3xl border border-slate-200/80 shadow-sm font-sans">
+                                    
+                                    <!-- Emergency (Always First) -->
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-red-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-red-100 text-red-600 flex items-center justify-center shadow-xs"><i data-lucide="alert-octagon" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Emergency</span>
+                                    </div>
+
+                                    <!-- Notices -->
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-orange-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center shadow-xs"><i data-lucide="megaphone" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Notices</span>
+                                    </div>
+
+                                    <!-- Facility -->
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-green-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-green-100 text-green-600 flex items-center justify-center shadow-xs"><i data-lucide="award" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Facility</span>
+                                    </div>
+
+                                    <!-- Contacts -->
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-rose-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center shadow-xs"><i data-lucide="phone-call" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Contacts</span>
+                                    </div>
+
+                                    <!-- Feedback -->
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-sky-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center shadow-xs"><i data-lucide="message-square" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Feedback</span>
+                                    </div>
+
+                                    <!-- Forms -->
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-teal-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center shadow-xs"><i data-lucide="file-text" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Forms</span>
+                                    </div>
+
+                                    <!-- Documents -->
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-yellow-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-yellow-100 text-yellow-600 flex items-center justify-center shadow-xs"><i data-lucide="folder" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Documents</span>
+                                    </div>
+
+                                    <!-- Patrol -->
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-pink-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center shadow-xs"><i data-lucide="map-pin" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Patrol</span>
+                                    </div>
+
+                                    <!-- Poll -->
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-purple-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center shadow-xs"><i data-lucide="vote" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Poll</span>
+                                    </div>
+
+                                    <!-- Vehicle -->
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-amber-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shadow-xs"><i data-lucide="car" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Vehicle</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- LEGACY PROPERTY BILLING SECTION (RETAINED) -->
+                            <div class="space-y-2 pb-6">
+                                <h3 class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-1">Property Billing</h3>
+                                <div class="grid grid-cols-3 gap-3 bg-white p-3.5 rounded-3xl border border-slate-200/80 shadow-sm">
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-emerald-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center shadow-xs"><i data-lucide="wallet" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Billing</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-amber-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shadow-xs"><i data-lucide="sticky-note" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">TIN</span>
+                                    </div>
+                                    <div class="flex flex-col items-center justify-center p-1 hover:bg-blue-50 rounded-xl transition-colors cursor-pointer">
+                                        <div class="w-9 h-9 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center shadow-xs"><i data-lucide="bar-chart-2" class="w-4 h-4"></i></div>
+                                        <span class="text-[9px] font-extrabold text-slate-600 mt-1 truncate w-full text-center">Statement</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- INVITE MODAL BOTTOM SHEET -->
+                    <div id="invite-bottom-sheet" class="absolute inset-0 z-30 bg-black/40 backdrop-blur-xs transition-opacity duration-300 pointer-events-none opacity-0 flex flex-col justify-end">
+                        <div class="bg-white rounded-t-[32px] p-5 space-y-4 max-h-[90%] overflow-y-auto transform translate-y-full transition-transform duration-300" id="bottom-sheet-container">
+                            
+                            <!-- Header -->
+                            <div class="flex flex-col items-center gap-2.5">
+                                <div class="w-12 h-1.5 bg-slate-200 rounded-full"></div>
+                                <div class="w-full flex items-center justify-between">
+                                    <div class="flex items-center gap-1.5">
+                                        <span id="form-type-pill" class="bg-orange-100 text-orange-700 text-[9px] font-extrabold uppercase px-2 py-0.5 rounded">One-Time</span>
+                                        <h3 class="font-extrabold text-sm text-slate-900" id="invite-modal-title">Create Visitor Pass</h3>
+                                    </div>
+                                    <button onclick="closeInviteModal()" class="w-7 h-7 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center"><i data-lucide="x" class="w-4 h-4 text-slate-500"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- Interactive Pass Form -->
+                            <form id="invite-guest-form" onsubmit="generateLivePass(event)" class="space-y-4 text-slate-800">
+                                <div>
+                                    <label class="block text-[9px] font-extrabold text-slate-500 uppercase tracking-wider mb-1">Guest / Contractor Name *</label>
+                                    <input type="text" id="input-guest-name" required placeholder="e.g. Grandma, Cleaner, Sister" class="w-full border border-slate-200 rounded-xl px-3 py-2 text-xs focus:ring-2 focus:ring-orange-500 focus:outline-none text-slate-800 bg-slate-50 font-semibold" />
+                                </div>
+
+                                <div>
+                                    <label class="block text-[9px] font-extrabold text-slate-500 uppercase tracking-wider mb-1">Plate Number (Optional)</label>
+                                    <input type="text" id="input-guest-plate" placeholder="e.g. VBA 4821" class="w-full border border-slate-200 rounded-xl px-3 py-2 text-xs focus:ring-2 focus:ring-orange-500 focus:outline-none text-slate-800 bg-slate-50 uppercase font-semibold" />
+                                </div>
+
+                                <!-- Dynamic Field: Regular / Recurring Schedule Option Selector -->
+                                <div id="form-field-regular-days" class="hidden space-y-2 bg-emerald-50/50 border border-emerald-100 rounded-2xl p-3">
+                                    <label class="block text-[9px] font-extrabold text-emerald-800 uppercase tracking-wider">Select Scheduled Access Days *</label>
+                                    <div class="flex flex-wrap gap-1.5">
+                                        <label class="flex items-center gap-1 bg-white border border-slate-200 px-2 py-1 rounded-lg cursor-pointer text-[10px] font-extrabold"><input type="checkbox" name="regular-days" value="Mon" checked class="accent-emerald-600"> Mon</label>
+                                        <label class="flex items-center gap-1 bg-white border border-slate-200 px-2 py-1 rounded-lg cursor-pointer text-[10px] font-extrabold"><input type="checkbox" name="regular-days" value="Tue" class="accent-emerald-600"> Tue</label>
+                                        <label class="flex items-center gap-1 bg-white border border-slate-200 px-2 py-1 rounded-lg cursor-pointer text-[10px] font-extrabold"><input type="checkbox" name="regular-days" value="Wed" checked class="accent-emerald-600"> Wed</label>
+                                        <label class="flex items-center gap-1 bg-white border border-slate-200 px-2 py-1 rounded-lg cursor-pointer text-[10px] font-extrabold"><input type="checkbox" name="regular-days" value="Thu" class="accent-emerald-600"> Thu</label>
+                                        <label class="flex items-center gap-1 bg-white border border-slate-200 px-2 py-1 rounded-lg cursor-pointer text-[10px] font-extrabold"><input type="checkbox" name="regular-days" value="Fri" checked class="accent-emerald-600"> Fri</label>
+                                        <label class="flex items-center gap-1 bg-white border border-slate-200 px-2 py-1 rounded-lg cursor-pointer text-[10px] font-extrabold"><input type="checkbox" name="regular-days" value="Sat" class="accent-emerald-600"> Sat</label>
+                                    </div>
+                                </div>
+
+                                <!-- Dynamic Field: Overnight Warn Card -->
+                                <div id="form-field-overnight-warn" class="hidden bg-indigo-50 border border-indigo-100 rounded-2xl p-3 flex gap-2 items-start">
+                                    <i data-lucide="alert-triangle" class="w-4 h-4 text-indigo-700 shrink-0 mt-0.5"></i>
+                                    <div>
+                                        <h5 class="text-[10px] font-extrabold text-indigo-900">Quota Notification</h5>
+                                        <p class="text-[9px] text-indigo-700 mt-0.5">Saving this overnight pass will reduce your active unit quota count by exactly 1 pass.</p>
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div>
+                                        <label class="block text-[9px] font-extrabold text-slate-500 uppercase tracking-wider mb-1">Access Date</label>
+                                        <input type="date" required id="input-guest-date" class="w-full border border-slate-200 rounded-xl px-3 py-2 text-xs focus:ring-2 focus:ring-orange-500 focus:outline-none text-slate-800 bg-slate-50 font-semibold" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-[9px] font-extrabold text-slate-500 uppercase tracking-wider mb-1">Time Window</label>
+                                        <select id="input-guest-time" class="w-full border border-slate-200 rounded-xl px-3 py-1.5 text-xs focus:ring-2 focus:ring-orange-500 focus:outline-none text-slate-800 bg-slate-50 font-semibold">
+                                            <option value="Anytime">Anytime / All Day</option>
+                                            <option value="Morning">Morning (8am - 12pm)</option>
+                                            <option value="Afternoon">Afternoon (12pm - 6pm)</option>
+                                            <option value="Night">Night (6pm - midnight)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="w-full py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-extrabold text-xs rounded-xl shadow-lg shadow-orange-500/20 active:scale-[0.98] transition-all flex items-center justify-center gap-1.5">
+                                    <i data-lucide="qr-code" class="w-4 h-4"></i> Generate Active Pass
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <!-- UPCOMING VISITORS LIST BOTTOM SHEET (SHOWING ALL UPCOMING GUESTS) -->
+                    <div id="upcoming-bottom-sheet" class="absolute inset-0 z-30 bg-black/40 backdrop-blur-xs transition-opacity duration-300 pointer-events-none opacity-0 flex flex-col justify-end">
+                        <div class="bg-white rounded-t-[32px] p-5 space-y-4 max-h-[90%] overflow-y-auto transform translate-y-full transition-transform duration-300" id="upcoming-sheet-container">
+                            
+                            <div class="flex flex-col items-center gap-2.5">
+                                <div class="w-12 h-1.5 bg-slate-200 rounded-full"></div>
+                                <div class="w-full flex items-center justify-between">
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="bg-indigo-100 text-indigo-700 text-[9px] font-extrabold uppercase px-2 py-0.5 rounded">Active Schedule</span>
+                                        <h3 class="font-extrabold text-sm text-slate-900">Upcoming Visitors</h3>
+                                    </div>
+                                    <button onclick="closeUpcomingSheet()" class="w-7 h-7 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center"><i data-lucide="x" class="w-4 h-4 text-slate-500"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="space-y-3" id="upcoming-feed-list">
+                                <!-- Dynamic upcoming visitors populate here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- VISITOR PASS HISTORY BOTTOM SHEET (RELOCATED FROM BOTTOM SCREEN) -->
+                    <div id="history-bottom-sheet" class="absolute inset-0 z-30 bg-black/40 backdrop-blur-xs transition-opacity duration-300 pointer-events-none opacity-0 flex flex-col justify-end">
+                        <div class="bg-white rounded-t-[32px] p-5 space-y-4 max-h-[90%] overflow-y-auto transform translate-y-full transition-transform duration-300" id="history-sheet-container">
+                            
+                            <div class="flex flex-col items-center gap-2.5">
+                                <div class="w-12 h-1.5 bg-slate-200 rounded-full"></div>
+                                <div class="w-full flex items-center justify-between">
+                                    <div class="flex items-center gap-1.5">
+                                        <span class="bg-slate-100 text-slate-700 text-[9px] font-extrabold uppercase px-2 py-0.5 rounded">Archive Ledger</span>
+                                        <h3 class="font-extrabold text-sm text-slate-900">Visitor Pass History</h3>
+                                    </div>
+                                    <button onclick="closeHistorySheet()" class="w-7 h-7 bg-slate-100 hover:bg-slate-200 rounded-full flex items-center justify-center"><i data-lucide="x" class="w-4 h-4 text-slate-500"></i></button>
+                                </div>
+                            </div>
+
+                            <!-- History Feed List -->
+                            <div class="space-y-3 overflow-y-auto max-h-[350px] pr-1" id="history-feed-container">
+                                <!-- Dynamic history list populates here -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Simulated Mobile Bottom Navigation Bar (Matching original style) -->
+                <nav class="bg-white border-t border-slate-100 py-2.5 px-6 flex justify-between items-center relative select-none shrink-0" id="bottom-nav">
+                    <button onclick="setMobileScreen('new-integrated-home')" class="flex flex-col items-center gap-1 text-orange-500">
+                        <i data-lucide="home" class="w-5 h-5"></i>
+                        <span class="text-[10px] font-bold">Home</span>
+                    </button>
+                    <button class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-600">
+                        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                        <span class="text-[10px] font-semibold">Market</span>
+                    </button>
+                    
+                    <div class="w-14"></div>
+                    <button onclick="setMobileScreen('new-integrated-home')" class="absolute left-1/2 -translate-x-1/2 -top-4 w-12 h-12 bg-gradient-to-tr from-red-500 to-orange-500 rounded-full shadow-lg shadow-orange-500/20 text-white flex items-center justify-center border-4 border-slate-100 hover:scale-105 active:scale-95 transition-all">
+                        <i data-lucide="home" class="w-5 h-5 fill-white"></i>
+                    </button>
+
+                    <button class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-600">
+                        <i data-lucide="bell" class="w-5 h-5"></i>
+                        <span class="text-[10px] font-semibold">Alerts</span>
+                    </button>
+                    <button class="flex flex-col items-center gap-1 text-slate-400 hover:text-slate-600">
+                        <i data-lucide="user" class="w-5 h-5"></i>
+                        <span class="text-[10px] font-semibold">Profile</span>
+                    </button>
+                </nav>
+
+                <!-- Phone Bottom Home Bar line -->
+                <div class="bg-white pb-2 flex justify-center w-full shrink-0 select-none">
+                    <div class="w-32 h-1 bg-slate-300 rounded-full"></div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Credit and instructions -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-4 px-6 text-center text-xs text-slate-500 mt-auto">
+        Designed & developed interactively to run flawlessly within standard preview frame canvas tools.
+    </footer>
+
+    <script>
+        // State Stores
+        let overnightQuota = 3; 
+        const maxQuota = 5;
+
+        // Dynamic lists for the Sandbox state
+        let upcomingVisitors = [
+            { id: 101, name: "Jessica Tan (Sister)", type: "One-Time", plate: "WQA 9811", date: "June 5", time: "Morning", days: [] },
+            { id: 102, name: "Weekly Maid (Cleaners Co)", type: "Regular", plate: "VBA 4821", date: "June 6", time: "Afternoon", days: ["Sat"] }
+        ];
+
+        let visitorHistory = [
+            { id: 1, name: "David Miller", type: "One-Time", plate: "WUX 8841", date: "May 28", status: "Checked Out" },
+            { id: 2, name: "Aunt Sarah", type: "Regular", plate: "PPQ 421", date: "May 25", status: "Departed" },
+            { id: 3, name: "DHL Courier Express", type: "One-Time", plate: "BND 8839", date: "May 21", status: "Expired" }
+        ];
+
+        // Default Setup
+        document.getElementById('input-guest-date').valueAsDate = new Date();
+
+        function updateQuotaUI() {
+            const bar = document.getElementById('quota-bar');
+            const label = document.getElementById('quota-text');
+            const percent = (overnightQuota / maxQuota) * 100;
+            
+            bar.style.width = `${percent}%`;
+            label.textContent = `${overnightQuota} / ${maxQuota} Passes Left`;
+        }
+
+        // Render dynamic list of visitor history inside sheet
+        function renderHistory() {
+            const container = document.getElementById('history-feed-container');
+            if (visitorHistory.length === 0) {
+                container.innerHTML = `<p class="text-xs text-slate-400 text-center py-6">No historical records found.</p>`;
+                return;
+            }
+
+            container.innerHTML = visitorHistory.map(item => {
+                let badgeColor = "bg-slate-100 text-slate-600";
+                if (item.status === "Checked In") badgeColor = "bg-emerald-100 text-emerald-800";
+                if (item.status === "Checked Out" || item.status === "Departed") badgeColor = "bg-slate-100 text-slate-600";
+                if (item.status === "Expired") badgeColor = "bg-red-50 text-red-700 border border-red-100";
+
+                return `
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-2.5 last:border-0 last:pb-0">
+                        <div class="flex-1 min-w-0 pr-2">
+                            <div class="flex items-center gap-1.5">
+                                <h4 class="text-xs font-bold text-slate-800 truncate">${item.name}</h4>
+                                <span class="text-[8px] font-bold ${badgeColor} px-1.5 py-0.5 rounded shrink-0">${item.status}</span>
+                            </div>
+                            <p class="text-[9px] text-slate-500 mt-0.5">${item.type} • Plate: ${item.plate} • ${item.date}</p>
+                        </div>
+                        <button onclick="reinviteFromHistory('${item.name}', '${item.plate}', '${item.type}')" class="px-2.5 py-1 bg-orange-50 hover:bg-orange-100 text-orange-600 text-[9px] font-extrabold rounded-lg flex items-center gap-1 transition-all shrink-0">
+                            <i data-lucide="rotate-ccw" class="w-3 h-3"></i> Re-Invite
+                        </button>
+                    </div>
+                `;
+            }).join('');
+            lucide.createIcons();
+        }
+
+        // Render the "Upcoming Visitors Card" located inside the Visitor Desk
+        function renderUpcomingCard() {
+            const container = document.getElementById('upcoming-visitor-card');
+            
+            if (upcomingVisitors.length === 0) {
+                container.innerHTML = `
+                    <div class="bg-slate-50 border border-dashed border-slate-200 rounded-2xl py-4 px-3 flex flex-col items-center text-center hover:bg-slate-100/50 transition-all">
+                        <p class="text-xs font-extrabold text-slate-500">No expected upcoming visitors</p>
+                        <p class="text-[10px] text-slate-400 mt-0.5">Generate passes or view history shortcuts</p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Get the first upcoming guest to feature as primary
+            const primaryGuest = upcomingVisitors[0];
+            const extraCount = upcomingVisitors.length - 1;
+
+            let gradientStyle = "from-orange-500 to-red-500";
+            let typeLabel = "ONE-TIME PASS";
+
+            if (primaryGuest.type === 'Regular') {
+                gradientStyle = "from-emerald-500 to-teal-600";
+                typeLabel = "RECURRING PASS";
+            } else if (primaryGuest.type === 'Overnight') {
+                gradientStyle = "from-indigo-600 to-purple-700";
+                typeLabel = "OVERNIGHT PASS";
+            }
+
+            // Generate card mockup layout
+            container.innerHTML = `
+                <div class="bg-gradient-to-r ${gradientStyle} rounded-2xl p-3.5 text-white shadow-sm hover:brightness-[1.03] active:scale-[0.99] transition-all relative overflow-hidden">
+                    <div class="absolute right-0 top-0 translate-x-4 -translate-y-4 w-24 h-24 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1 min-w-0 pr-3">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="bg-white/20 text-white text-[8px] font-extrabold uppercase tracking-widest px-1.5 py-0.5 rounded">${typeLabel}</span>
+                                ${extraCount > 0 ? `<span class="bg-yellow-400 text-slate-900 text-[8px] font-black px-1.5 py-0.5 rounded animate-pulse">+${extraCount} MORE INCOMING</span>` : ''}
+                            </div>
+                            <h4 class="font-extrabold text-xs mt-2 truncate">${primaryGuest.name}</h4>
+                            <p class="text-[9px] text-white/95 mt-0.5">Plate: ${primaryGuest.plate} • Scheduled: ${primaryGuest.date} (${primaryGuest.time})</p>
+                        </div>
+                        <div class="bg-white/25 hover:bg-white/35 text-white p-2 rounded-xl flex flex-col items-center justify-center shrink-0">
+                            <i data-lucide="chevron-up" class="w-4 h-4"></i>
+                            <span class="text-[7px] font-black mt-0.5 uppercase tracking-wider">VIEW ALL</span>
+                        </div>
+                    </div>
+                    <div class="mt-2.5 pt-2 border-t border-white/10 flex items-center justify-between text-[8px] text-white/80 font-semibold">
+                        <span>👆 Tap anywhere to review schedules</span>
+                        <span class="underline">Manage Passes</span>
+                    </div>
+                </div>
+            `;
+            lucide.createIcons();
+        }
+
+        // Render the detailed bottom sheet list of all upcoming passes
+        function renderUpcomingFeedList() {
+            const container = document.getElementById('upcoming-feed-list');
+            if (upcomingVisitors.length === 0) {
+                container.innerHTML = `
+                    <div class="py-12 flex flex-col items-center text-center">
+                        <p class="text-xs font-bold text-slate-400">All passes are cleared.</p>
+                        <p class="text-[10px] text-slate-300 mt-1">Ready for new guest configurations.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = upcomingVisitors.map((item, index) => {
+                let pillClass = "bg-orange-50 text-orange-700";
+                if (item.type === 'Regular') pillClass = "bg-emerald-50 text-emerald-700";
+                if (item.type === 'Overnight') pillClass = "bg-indigo-50 text-indigo-700";
+
+                return `
+                    <div class="bg-slate-50 border border-slate-200/80 rounded-2xl p-3.5 space-y-3">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <div class="flex items-center gap-1.5">
+                                    <span class="${pillClass} text-[8px] font-extrabold uppercase px-1.5 py-0.5 rounded">${item.type}</span>
+                                    <h4 class="text-xs font-black text-slate-950">${item.name}</h4>
+                                </div>
+                                <p class="text-[9px] text-slate-500 mt-1">Vehicle Plate: <span class="font-bold text-slate-700 uppercase">${item.plate}</span></p>
+                                <p class="text-[9px] text-slate-500">Access Schedule: <span class="font-bold text-slate-700">${item.date} (${item.time})</span></p>
+                                ${item.days && item.days.length > 0 ? `<p class="text-[9px] text-emerald-600 font-bold">Recurring: ${item.days.join(', ')}</p>` : ''}
+                            </div>
+                            <div class="flex flex-col gap-1.5">
+                                <button onclick="sharePass('${item.name}')" class="px-2.5 py-1.5 bg-orange-500 hover:bg-orange-600 text-white text-[9px] font-bold rounded-lg flex items-center gap-1 transition-all">
+                                    <i data-lucide="share-2" class="w-3 h-3"></i> Share QR
+                                </button>
+                                <button onclick="cancelPass(${item.id})" class="px-2.5 py-1.5 bg-slate-100 hover:bg-red-50 hover:text-red-600 text-slate-500 text-[9px] font-bold rounded-lg flex items-center gap-1 transition-all">
+                                    <i data-lucide="trash" class="w-3 h-3"></i> Cancel Pass
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            lucide.createIcons();
+        }
+
+        // Actions: Share Pass
+        function sharePass(name) {
+            triggerNotification("Pass Shared", `QR invitation code prepared & copied to clipboard for ${name}!`);
+        }
+
+        // Actions: Cancel / Delete Pass
+        function cancelPass(id) {
+            upcomingVisitors = upcomingVisitors.filter(item => item.id !== id);
+            renderUpcomingCard();
+            renderUpcomingFeedList();
+            triggerNotification("Pass Revoked", "Active guest registration canceled successfully.");
+            
+            if (upcomingVisitors.length === 0) {
+                closeUpcomingSheet();
+            }
+        }
+
+        // Screen Navigation
+        function updateControlPanelState(activeScreen) {
+            const btnOld = document.getElementById('btn-toggle-old');
+            const btnNew = document.getElementById('btn-toggle-new');
+
+            if (activeScreen === 'old-home') {
+                btnOld.className = "px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 bg-orange-500 text-white shadow-md shadow-orange-500/10";
+                btnNew.className = "px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 bg-slate-800 text-slate-400 hover:text-white";
+            } else {
+                btnOld.className = "px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 bg-slate-800 text-slate-400 hover:text-white";
+                btnNew.className = "px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all flex items-center gap-1.5 bg-orange-500 text-white shadow-md shadow-orange-500/10";
+            }
+        }
+
+        function setMobileScreen(screen) {
+            const screenOld = document.getElementById('screen-old');
+            const screenNew = document.getElementById('screen-new');
+
+            if (screen === 'old-home') {
+                screenOld.style.transform = 'translateX(0)';
+                screenNew.style.transform = 'translateX(100%)';
+                updateControlPanelState('old-home');
+            } else {
+                screenOld.style.transform = 'translateX(-100%)';
+                screenNew.style.transform = 'translateX(0)';
+                updateControlPanelState('new-integrated-home');
+            }
+        }
+
+        // System Toasts
+        let toastTimeout;
+        function triggerNotification(title, message) {
+            const toast = document.getElementById('toast');
+            const toastTitle = document.getElementById('toast-title');
+            const toastMessage = document.getElementById('toast-message');
+            
+            toastTitle.textContent = title;
+            toastMessage.textContent = message;
+            toast.classList.remove('-translate-y-32', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                closeToast();
+            }, 5500);
+        }
+
+        function closeToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-0', 'opacity-100');
+            toast.classList.add('-translate-y-32', 'opacity-0');
+        }
+
+        // Upcoming Bottom Sheet Actions
+        function openUpcomingSheet() {
+            if (upcomingVisitors.length === 0) return;
+            renderUpcomingFeedList();
+            const sheet = document.getElementById('upcoming-bottom-sheet');
+            const container = document.getElementById('upcoming-sheet-container');
+
+            sheet.classList.remove('pointer-events-none', 'opacity-0');
+            container.style.transform = 'translateY(0)';
+        }
+
+        function closeUpcomingSheet() {
+            const sheet = document.getElementById('upcoming-bottom-sheet');
+            const container = document.getElementById('upcoming-sheet-container');
+
+            container.style.transform = 'translateY(100%)';
+            setTimeout(() => {
+                sheet.classList.add('pointer-events-none', 'opacity-0');
+            }, 300);
+        }
+
+        // History Bottom Sheet Actions
+        function openHistorySheet() {
+            renderHistory();
+            const sheet = document.getElementById('history-bottom-sheet');
+            const container = document.getElementById('history-sheet-container');
+
+            sheet.classList.remove('pointer-events-none', 'opacity-0');
+            container.style.transform = 'translateY(0)';
+        }
+
+        function closeHistorySheet() {
+            const sheet = document.getElementById('history-bottom-sheet');
+            const container = document.getElementById('history-sheet-container');
+
+            container.style.transform = 'translateY(100%)';
+            setTimeout(() => {
+                sheet.classList.add('pointer-events-none', 'opacity-0');
+            }, 300);
+        }
+
+        // Forms and Sheets Modal Controls
+        function openInviteModal(inviteType) {
+            const sheet = document.getElementById('invite-bottom-sheet');
+            const container = document.getElementById('bottom-sheet-container');
+            const title = document.getElementById('invite-modal-title');
+            const pill = document.getElementById('form-type-pill');
+
+            const fieldRegular = document.getElementById('form-field-regular-days');
+            const fieldOvernight = document.getElementById('form-field-overnight-warn');
+
+            title.textContent = `Invite ${inviteType} Guest`;
+            pill.textContent = inviteType;
+
+            // Reset dynamically visible fields
+            fieldRegular.classList.add('hidden');
+            fieldOvernight.classList.add('hidden');
+
+            if (inviteType === 'One-Time') {
+                pill.className = "bg-orange-100 text-orange-700 text-[9px] font-extrabold uppercase px-2 py-0.5 rounded";
+            } else if (inviteType === 'Regular') {
+                pill.className = "bg-emerald-100 text-emerald-700 text-[9px] font-extrabold uppercase px-2 py-0.5 rounded";
+                fieldRegular.classList.remove('hidden');
+            } else if (inviteType === 'Overnight') {
+                pill.className = "bg-indigo-100 text-indigo-700 text-[9px] font-extrabold uppercase px-2 py-0.5 rounded";
+                fieldOvernight.classList.remove('hidden');
+            }
+
+            sheet.classList.remove('pointer-events-none', 'opacity-0');
+            container.style.transform = 'translateY(0)';
+        }
+
+        function closeInviteModal() {
+            const sheet = document.getElementById('invite-bottom-sheet');
+            const container = document.getElementById('bottom-sheet-container');
+
+            container.style.transform = 'translateY(100%)';
+            setTimeout(() => {
+                sheet.classList.add('pointer-events-none', 'opacity-0');
+            }, 300);
+        }
+
+        function applyFavorite(name, plate, type) {
+            openInviteModal(type);
+            document.getElementById('input-guest-name').value = name;
+            document.getElementById('input-guest-plate').value = plate;
+        }
+
+        function reinviteFromHistory(name, plate, type) {
+            closeHistorySheet();
+            setTimeout(() => {
+                openInviteModal(type);
+                document.getElementById('input-guest-name').value = name;
+                document.getElementById('input-guest-plate').value = plate;
+                triggerNotification("History Import", `Auto-filled details for ${name}`);
+            }, 350);
+        }
+
+        function generateLivePass(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('input-guest-name').value;
+            const plate = document.getElementById('input-guest-plate').value || 'N/A';
+            const type = document.getElementById('form-type-pill').textContent;
+            const time = document.getElementById('input-guest-time').value;
+
+            // Check Overnight Quota
+            if (type === 'Overnight') {
+                if (overnightQuota <= 0) {
+                    triggerNotification("Limit Reached", "Overnight stay limit reached for this month. Please request more passes.");
+                    closeInviteModal();
+                    return;
+                }
+                overnightQuota--;
+                updateQuotaUI();
+            }
+
+            // Get selected schedule days if Regular
+            let selectedDays = [];
+            if (type === 'Regular') {
+                const checkboxes = document.querySelectorAll('input[name="regular-days"]:checked');
+                checkboxes.forEach(cb => selectedDays.push(cb.value));
+                if (selectedDays.length === 0) selectedDays = ['Mon', 'Wed'];
+            }
+
+            // Assign Active State and insert on top of Upcoming list
+            const newPass = {
+                id: Date.now(),
+                name: name,
+                type: type,
+                plate: plate.toUpperCase(),
+                date: "Today",
+                time: time,
+                days: selectedDays
+            };
+            upcomingVisitors.unshift(newPass);
+
+            // Add dynamic entry to past history
+            const newHistoryItem = {
+                id: Date.now() + 1,
+                name: name,
+                type: type,
+                plate: plate.toUpperCase(),
+                date: "Today",
+                status: "Checked In"
+            };
+            visitorHistory.unshift(newHistoryItem);
+
+            renderUpcomingCard();
+            closeInviteModal();
+
+            triggerNotification("Pass Active", `${type} pass for ${name} is live and saved inside your Upcoming desk card.`);
+            document.getElementById('invite-guest-form').reset();
+            document.getElementById('input-guest-date').valueAsDate = new Date();
+        }
+
+        // Initialize Workspace
+        window.onload = function() {
+            lucide.createIcons();
+            setMobileScreen('new-integrated-home');
+            updateQuotaUI();
+            renderUpcomingCard();
+        }
+    </script>
+</body>
+</html>
